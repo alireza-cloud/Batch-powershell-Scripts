@@ -1,4 +1,4 @@
-#ping all the 192.168.0.x subnet 
+#ping all the 192.168.0.x subnet  
 for i in $(seq 1 10); do (ping -c 1 192.168.0.${i} | grep "bytes from" | awk '{print $4}'&);done; 
 
 #loops over a file "users" executes.py 
